@@ -10,7 +10,7 @@ body{
     border: 2px solid gray;
     padding: 10px;
     border-radius: 4px;
-    background-color: rgb(245, 241, 241);
+    background-color: rgb(250, 249, 249);
 }
 
 .text-container{
@@ -45,7 +45,7 @@ td{
 .equal{
     background-color: rgb(112, 176, 236);
     color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(35, 44, 51);
 }
 .fa-undo{
     font-size: 1.1em;
