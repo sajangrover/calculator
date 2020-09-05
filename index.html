@@ -11,38 +11,38 @@
     <h1>CALCULATOR</h1>
     <div class="container">
         <div class="text-container">
-            <input type="text">
+            <input type="text" id="data">
         </div>
         <div class="button-conatiner">
             <div class="common layer1">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>&divide;</button>
+                <button class="seven" onclick="getValue('7')">7</button>
+                <button class="eight" onclick="getValue('8')">8</button>
+                <button class="nine" onclick="getValue('9')">9</button>
+                <button class="divide" onclick="getValue('/')">&divide;</button>
                 <button><i class="fa fa-undo"></i></button>
                 <button>C</button>
             </div>
             <div class="common layer2">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>*</button>
-                <button>(</button>
-                <button>)</button>
+                <button class="four" onclick="getValue('4')">4</button>
+                <button class="five" onclick="getValue('5')">5</button>
+                <button class="six" onclick="getValue('6')">6</button>
+                <button class="mul" onclick="getValue('*')">*</button>
+                <button class="left" onclick="getValue('(')">(</button>
+                <button class="right" onclick="getValue(')')">)</button>
             </div>
             <div class="common layer3">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>-</button>
+                <button class="one" onclick="getValue('1')">1</button>
+                <button class="two" onclick="getValue('2')">2</button>
+                <button class="three" onclick="getValue('3')">3</button>
+                <button class="minus" onclick="getValue('-')">-</button>
                 <button>&times<sup>2</button>
-                <button><span>&#8730</span></button>
+                <button class="sqrt" onclick="getValue('sqrt')"><span>&#8730</span></button>
             </div>
             <div class="common layer4">
-                <button>0</button>
-                <button>.</button>
-                <button>%</button>
-                <button>+</button>
+                <button class="zero" onclick="getValue('0')">0</button>
+                <button class="dot" onclick="getValue('.')">.</button>
+                <button class="mod" onclick="getValue('%')">%</button>
+                <button class="plus" onclick="getValue('+')">+</button>
                 <button class="equal">=</button>
             </div>
         </div>

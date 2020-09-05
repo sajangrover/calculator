@@ -26,16 +26,20 @@ body{
 
 .common{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 button{
     flex: auto;
     font-size: 1.1em;
     background-color: white;
-    margin: 5px;
-    width: 0px;
-    height: 30px;
+    width:calc(16% - 10px);
+    margin:5px 5px;
+    padding: 6px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 4px;
+    box-shadow: 0px 1px 0px rgb(202, 201, 201);
+    cursor: pointer;
 }
 
 input{
@@ -48,8 +52,9 @@ input{
 .equal{
     background-color: rgb(112, 176, 236);
     color: white;
-    border: 1px solid rgb(35, 44, 51);
+    border: 1px solid rgb(1, 1, 219);
     flex-grow: 2;
+    width:calc(32% - 10px);
 }
 
 .fa-undo{
@@ -71,4 +76,11 @@ input{
     .container {
         width : 290px;
     }
+}
+
+button:active{
+    background-color: rgb(231, 230, 230);
+}
+.equal:active {
+    background-color: rgb(41, 139, 231);;
 }
