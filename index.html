@@ -5,6 +5,7 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="calculator.js"></script>
 </head>
 <body>
     <h1>CALCULATOR</h1>
@@ -13,85 +14,37 @@
             <input type="text">
         </div>
         <div class="button-conatiner">
-            <table>
-                <tr>
-                    <td class="seven">
-                        7
-                    </td>
-                    <td class="eight">
-                        8
-                    </td>
-                    <td class="nine">
-                        9
-                    </td>
-                    <td class="divide">
-                        &divide;
-                    </td>
-                    <td class="undo">
-                        <i class="fa fa-undo"></i>
-                    </td >
-                    <td class="clear">
-                        C
-                    </td>
-                </tr>
-                <tr>
-                    <td class="four">
-                        4
-                    </td>
-                    <td class="five">
-                        5
-                    </td>
-                    <td class="six">
-                        6
-                    </td>
-                    <td class="mul">
-                        *
-                    </td>
-                    <td class="left">
-                        (
-                    </td>
-                    <td>
-                        )
-                    </td class="right">
-                </tr>
-                <tr>
-                    <td class="one">
-                        1
-                    </td>
-                    <td class="two">
-                        2
-                    </td>
-                    <td class="three">
-                        3
-                    </td>
-                    <td class="dot">
-                        -
-                    </td>
-                    <td class="pow">
-                        &times<sup>2</sup>
-                    </td>
-                    <td class="sqrt">
-                        <span>&#8730</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="zero">
-                        0
-                    </td>
-                    <td class="point">
-                        .
-                    </td>
-                    <td class="mod">
-                        %
-                    </td>
-                    <td class="plus">
-                        +
-                    </td>
-                    <td colspan="2" class="equal">
-                        =
-                    </td>
-                </tr>
-            </table>
+            <div class="common layer1">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>&divide;</button>
+                <button><i class="fa fa-undo"></i></button>
+                <button>C</button>
+            </div>
+            <div class="common layer2">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>*</button>
+                <button>(</button>
+                <button>)</button>
+            </div>
+            <div class="common layer3">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>-</button>
+                <button>&times<sup>2</button>
+                <button><span>&#8730</span></button>
+            </div>
+            <div class="common layer4">
+                <button>0</button>
+                <button>.</button>
+                <button>%</button>
+                <button>+</button>
+                <button class="equal">=</button>
+            </div>
         </div>
     </div>
 </body>

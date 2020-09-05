@@ -5,6 +5,7 @@ body{
     align-items: center;
     margin-top: -200px;
 }
+
 .container{
     width: 500px;
     border: 2px solid gray;
@@ -17,36 +18,40 @@ body{
     width: 100%;
     margin-top: 10px;
 }
+
+.button-conatiner{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.common{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    flex: auto;
+    font-size: 1.1em;
+    background-color: white;
+    margin: 5px;
+    width: 0px;
+    height: 30px;
+}
+
 input{
     width: 100%;
     height: 50px;
     font-size: 1.5em;
     color: rgb(36, 36, 36);
 }
-.button-conatiner{
-    width: 100%;
-}
-table{
-    width: 100%;
-    margin-top: 10px;
-    border-spacing: 5px;
-    text-align: center;
-}
-td{
-    border: 1px solid rgb(160, 157, 157);
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1.1em;
-    margin: 50px;
-    background-color: white;
-    box-shadow: 0px 1px 0px rgb(117, 116, 116);
-    width: 27px;
-}
+
 .equal{
     background-color: rgb(112, 176, 236);
     color: white;
     border: 1px solid rgb(35, 44, 51);
+    flex-grow: 2;
 }
+
 .fa-undo{
     font-size: 1.1em;
     font-weight: lighter;
