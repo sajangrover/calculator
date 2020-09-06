@@ -38,7 +38,8 @@ const evaluate = () =>{
 const calculate = () =>{
     const input = document.getElementById('data');
     const exp = input.value;
-    let word = "";
+   // console.log(eval(exp))
+    let word = "0";
     if(exp[0]=='-'){
         operand.push(0);
     }
@@ -56,12 +57,20 @@ const calculate = () =>{
                 }
                 dot=0;
             }
+            if(isNaN(exp[i-1])){
+                alert("wrong input");
+                return;
+            }
             if(exp[i]=='(')
                 operator.push(exp[i]);
             else if(exp[i]==')'){
-                while(operator[operator.length-1]!='('){
+                while(operator.length && operator[operator.length-1]!='('){
                     result = evaluate()
                     operand.push(result);
+                }
+                if(!operator.length){
+                    alert("wrong input");
+                    return;
                 }
                 operator.pop();
             }
@@ -72,7 +81,7 @@ const calculate = () =>{
                 }
                 operator.push(exp[i]);
             }
-            word="";
+            word="0";
         }
         else{
             word += exp[i];
@@ -94,6 +103,12 @@ const calculate = () =>{
     while(operator.length){
         result = evaluate()
         operand.push(result);
+    }
+    if(operator.length){
+        operand.length=0;
+        operator.length=0;
+        alert("wrong input");
+        return;
     }
     operand.length=0;
     operator.length=0;
